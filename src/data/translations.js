@@ -26,12 +26,20 @@ export const translations = {
     'lang.switch': 'English',
     'lang.switchLabel': 'Switch the site to English',
 
+    'hero.label': 'Foto nga aktivitetet tona',
+    'hero.pause': 'Ndalo shfaqjen automatike',
+    'hero.play': 'Nis shfaqjen automatike',
+    'search.label': 'Kërko',
+    'search.placeholder': 'Kërko sipas titullit, tekstit ose projektit…',
+    'search.placeholderProjects': 'Kërko projekte…',
+    'search.clear': 'Pastro kërkimin',
+    'search.results': '{n} rezultate',
+    'search.none': 'Asgjë nuk u gjet. Provo një fjalë tjetër ose pastro kërkimin.',
     'home.mission.title': 'Misioni ynë',
     'home.mission.text':
       'Të kontribuojmë direkt dhe indirekt në forcimin e demokracisë dhe zbatimin e ligjit si dhe zhvillimin ekonomik e shoqëror nëpërmjet advokimit rinor në vendimmarrjen publike lokale dhe qëndrore',
     'home.mission.cta': 'MË SHUMË',
     'home.latest.title': 'Më të fundit',
-    'home.more.title': 'Më shumë nga aktivitetet tona',
     'home.engage.title': 'Angazhim, Reagim, Veprim',
     'home.engage.text':
       'Të rrisim ndërgjegjësimin dhe presionin qytetar në: mbrojtjen e mjedisit, ruatjen e trashëgimisë kulturore, aftësimin në fushën e Teknologjisë së Informacionit dhe Komunikimit dhe medias, zhvillimit të bujqësisë dhe industrisë së turizmit në vend, si dhe të inkurajojmë përmirësimin e jetës sociale në Shqipëri.',
@@ -162,12 +170,20 @@ export const translations = {
     'lang.switch': 'Shqip',
     'lang.switchLabel': 'Ndrysho faqen në shqip',
 
+    'hero.label': 'Photos from our activities', // REVIEW
+    'hero.pause': 'Pause the slideshow', // REVIEW
+    'hero.play': 'Start the slideshow', // REVIEW
+    'search.label': 'Search', // REVIEW
+    'search.placeholder': 'Search by title, text or project…', // REVIEW
+    'search.placeholderProjects': 'Search projects…', // REVIEW
+    'search.clear': 'Clear search', // REVIEW
+    'search.results': '{n} results', // REVIEW
+    'search.none': 'Nothing found. Try another word or clear the search.', // REVIEW
     'home.mission.title': 'Our Mission', // REVIEW
     'home.mission.text':
       'To contribute directly and indirectly to strengthening democracy and the rule of law, as well as economic and social development, through youth advocacy in local and central public decision-making.', // REVIEW
     'home.mission.cta': 'LEARN MORE', // REVIEW
     'home.latest.title': 'Latest', // REVIEW
-    'home.more.title': 'More from our activities', // REVIEW
     'home.engage.title': 'Engagement, Response, Action', // REVIEW
     'home.engage.text':
       'To raise awareness and civic pressure on: protecting the environment, preserving cultural heritage, building skills in Information and Communication Technology and media, developing agriculture and the tourism industry in the country, and encouraging improvement of social life in Albania.', // REVIEW

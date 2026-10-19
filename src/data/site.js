@@ -27,3 +27,12 @@ export const nav = [
 export const CAROUSEL_COUNT = 5
 // How many cards are shown at first, and added by each "show more" click.
 export const CARDS_PAGE_SIZE = 6
+
+// HOME SLIDESHOW (photos only, no text). Change, reorder or add photos here.
+// src = image name from public/img (see scripts/make-images.mjs); alt = description for screen readers.
+export const heroSlides = [
+  { src: 'cycling-group', alt: { sq: 'Grup të rinjsh me biçikleta në një aktivitet në natyrë', en: 'A group of young people with bicycles at an outdoor activity' } }, // REVIEW alt
+  { src: 'group-flags', alt: { sq: 'Grup të rinjsh me flamuj të vendeve të ndryshme përpara një mozaiku', en: 'A group of young people holding flags of different countries in front of a mosaic' } }, // REVIEW alt
+  { src: 'group-photo-2', alt: { sq: 'Të rinj të ulur në tavolina gjatë një aktiviteti trajnimi', en: 'Young people seated at tables during a training activity' } }, // REVIEW alt
+  { src: 'team-meeting', alt: { sq: 'Të rinj në një takim pune rreth tavolinës', en: 'Young people at a working meeting around a table' } }, // REVIEW alt
+]

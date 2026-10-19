@@ -354,3 +354,113 @@
 .hero__photo--c {
   animation-delay: 0.24s;
 }
+
+/* ---------- Home: photo slideshow + mission ---------- */
+.hero-slider {
+  position: relative;
+  background: var(--sky-tint);
+}
+.hero-slider__track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  height: clamp(300px, 44vw, 600px);
+}
+.hero-slider__track::-webkit-scrollbar {
+  display: none;
+}
+.hero-slider__track:focus-visible {
+  outline-offset: -4px;
+}
+.hero-slider__slide {
+  flex: 0 0 100%;
+  margin: 0;
+  scroll-snap-align: start;
+}
+.hero-slider__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-slider__arrow {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  box-shadow: var(--shadow);
+}
+.hero-slider__arrow--prev {
+  left: var(--gutter);
+}
+.hero-slider__arrow--next {
+  right: var(--gutter);
+}
+.hero-slider__bar {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  translate: -50% 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.5rem;
+  background: rgb(15 23 42 / 0.62);
+  border-radius: 999px;
+}
+.hero-slider__pause {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+}
+.dot--light::before {
+  background: rgb(255 255 255 / 0.6);
+}
+.dot--light:hover::before {
+  background: var(--white);
+}
+.dot--light.is-active::before {
+  background: var(--sky);
+}
+@media (max-width: 599px) {
+  .hero-slider__arrow {
+    display: none;
+  }
+}
+
+.mission {
+  padding-block: var(--space-5);
+}
+.mission__grid {
+  display: grid;
+  gap: var(--space-3);
+  align-items: start;
+}
+.mission__title {
+  font-size: var(--step-4);
+  letter-spacing: -0.03em;
+}
+.mission__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+.mission__lead {
+  font-size: var(--step-2);
+  line-height: 1.4;
+  font-family: var(--font-display);
+  font-weight: 500;
+  max-width: 36ch;
+  margin: 0;
+}
+@media (min-width: 900px) {
+  .mission__grid {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: var(--space-5);
+  }
+}
