@@ -42,19 +42,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="videos-section" aria-labelledby="videos-title">
-        <div className="container">
-          <h2 id="videos-title" className="section__title">
-            {t('home.videos.title')}
-          </h2>
-          <div className="video-row">
-            {videos.slice(0, 3).map((v, i) => (
-              <VideoCard key={i} video={v} n={i + 1} />
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="section" aria-labelledby="latest-title">
         <div className="container">
           <h2 id="latest-title" className="section__title">
@@ -106,7 +93,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section--tint contact-block" aria-labelledby="contact-title">
+      <section className="videos-section" aria-labelledby="videos-title">
+        <div className="container">
+          <h2 id="videos-title" className="section__title">
+            {t('home.videos.title')}
+          </h2>
+          <div className="video-row">
+            {videos.slice(0, 3).map((v, i) => (
+              <VideoCard key={i} video={v} n={i + 1} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section contact-block" aria-labelledby="contact-title">
         <div className="container contact-block__inner">
           <h2 id="contact-title" className="section__title">
             {t('home.contact.title')}
