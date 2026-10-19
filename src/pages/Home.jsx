@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { Carousel } from '../components/Carousel.jsx'
 import { Gallery } from '../components/Gallery.jsx'
 import { Img } from '../components/Img.jsx'
+import { VideoCard } from '../components/VideoCard.jsx'
+import { videos } from '../data/videos.js'
 import { HeroSlider } from '../components/HeroSlider.jsx'
 import { CAROUSEL_COUNT, site } from '../data/site.js'
 import { posts } from '../lib/content.js'
@@ -36,6 +38,19 @@ export default function Home() {
             <Link to="/contact" className="btn btn--lg">
               {t('home.mission.cta')}
             </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="videos-section" aria-labelledby="videos-title">
+        <div className="container">
+          <h2 id="videos-title" className="section__title">
+            {t('home.videos.title')}
+          </h2>
+          <div className="video-row">
+            {videos.slice(0, 3).map((v, i) => (
+              <VideoCard key={i} video={v} n={i + 1} />
+            ))}
           </div>
         </div>
       </section>

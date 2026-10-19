@@ -33,6 +33,10 @@ export const translations = {
     'search.clear': 'Pastro kërkimin',
     'search.results': '{n} rezultate',
     'search.none': 'Asgjë nuk u gjet. Provo një fjalë tjetër ose pastro kërkimin.',
+    'home.videos.title': 'Videot tona',
+    'videos.item': 'Video',
+    'videos.soon': 'Video së shpejti',
+    'videos.play': 'Luaj videon',
     'home.mission.title': 'Misioni ynë',
     'home.mission.text':
       'Të kontribuojmë direkt dhe indirekt në forcimin e demokracisë dhe zbatimin e ligjit si dhe zhvillimin ekonomik e shoqëror nëpërmjet advokimit rinor në vendimmarrjen publike lokale dhe qëndrore',
@@ -175,6 +179,10 @@ export const translations = {
     'search.clear': 'Clear search', // REVIEW
     'search.results': '{n} results', // REVIEW
     'search.none': 'Nothing found. Try another word or clear the search.', // REVIEW
+    'home.videos.title': 'Our Videos', // REVIEW
+    'videos.item': 'Video',
+    'videos.soon': 'Video coming soon', // REVIEW
+    'videos.play': 'Play video', // REVIEW
     'home.mission.title': 'Our Mission', // REVIEW
     'home.mission.text':
       'To contribute directly and indirectly to strengthening democracy and the rule of law, as well as economic and social development, through youth advocacy in local and central public decision-making.', // REVIEW
