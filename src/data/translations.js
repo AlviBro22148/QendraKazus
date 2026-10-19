@@ -13,12 +13,12 @@ export const translations = {
     'meta.homeDesc':
       'Qendra KAZUS është organizatë rinore për advokim në Korçë, Shqipëri. Projekte, lajme dhe njoftime.',
 
-    'nav.home': 'Home',
-    'nav.about': 'About',
+    'nav.home': 'Kreu',
+    'nav.about': 'Rreth Nesh',
     'nav.projects': 'Projektet tona',
     'nav.media': 'Media',
     'nav.notifications': 'Njoftime',
-    'nav.contact': 'Contact',
+    'nav.contact': 'Kontakt',
     'nav.menu': 'Menuja',
     'nav.close': 'Mbyll',
     'nav.main': 'Navigimi kryesor',
@@ -41,14 +41,14 @@ export const translations = {
     'home.empower.title': 'Fuqizojmë të rinjtë',
     'home.contact.title': 'QENDRA KAZUS',
 
-    'about.title': 'About',
+    'about.title': 'Rreth Nesh',
     // The live About page is English only. The Albanian below is a translation. REVIEW
     'about.intro.title': 'Fuqizojmë të rinjtë të udhëheqin ndryshimin',
     'about.intro.text':
       'Qendra Kazus udhëhiqet nga misioni për të frymëzuar aktivizmin rinor dhe për të krijuar mundësi që liderët e rinj t’i formësojnë komunitetet e tyre. Jemi të përkushtuar të nxisim nisma që ndërtojnë një të ardhme më të ndritur dhe më gjithëpërfshirëse.',
     'about.team.title': 'Fuqizojmë brezin e ardhshëm të ndryshuesve',
     'about.team.text': 'Njihuni me individët e përkushtuar që e çojnë përpara misionin tonë.',
-    'meta.about': 'About | Qendra KAZUS',
+    'meta.about': 'Rreth Nesh | Qendra KAZUS',
     'meta.aboutDesc': 'Qendra KAZUS frymëzon aktivizmin rinor dhe krijon mundësi për liderët e rinj.',
 
     'projects.title': 'Projektet tona',
@@ -120,11 +120,11 @@ export const translations = {
     'meta.notif': 'Njoftime | Qendra KAZUS',
     'meta.notifDesc': 'Thirrje për ekspertë, projekte, partnerë Erasmus+, afate dhe njoftime nga Qendra KAZUS.',
 
-    'contact.title': 'Contact',
+    'contact.title': 'Kontakt',
     'contact.address': 'Adresa',
     'contact.phone': 'Telefoni',
     'contact.email': 'Email',
-    'meta.contact': 'Contact | Qendra KAZUS',
+    'meta.contact': 'Kontakt | Qendra KAZUS',
     'meta.contactDesc': 'Kontakto Qendrën KAZUS: Korçë, Albania | +355692942794 | qendrakazus@gmail.com',
 
     'footer.nav': 'Lidhje',
