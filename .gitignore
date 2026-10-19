@@ -1,0 +1,6 @@
+node_modules
+dist
+.impeccable/mocks
+.impeccable/review
+.claude/settings.local.json
+.claude/skills/impeccable/scripts/bin

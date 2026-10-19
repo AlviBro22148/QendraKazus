@@ -1,0 +1,42 @@
+/* Design tokens. Light mode only. */
+:root {
+  color-scheme: light;
+
+  /* Brand palette (from the brief) */
+  --white: #ffffff;
+  --sky: #0ea5e9; /* primary: fills, buttons (ink text on top) */
+  --sky-dark: #0284c7; /* hover/dark accent: borders, focus ring, large UI */
+  --sky-tint: #e0f2fe; /* light tint for sections and cards */
+  --ink: #0f172a; /* text */
+  --muted: #475569; /* muted text */
+  --line: #e2e8f0; /* borders */
+
+  /* Derived for small text: #0ea5e9 and #0284c7 are too light for body-size text on white (AA) */
+  --sky-ink: #0369a1; /* links and hover fills, 5.9:1 on white */
+  --sky-deep: #075985; /* text on tint backgrounds */
+
+  --font-display: 'Bricolage Grotesque Variable', 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Figtree Variable', 'Figtree', 'Segoe UI', system-ui, sans-serif;
+
+  /* Type scale */
+  --step--1: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --step-2: clamp(1.4rem, 1.2rem + 1vw, 1.9rem);
+  --step-3: clamp(1.8rem, 1.4rem + 2vw, 2.75rem);
+  --step-4: clamp(2.4rem, 1.5rem + 4.4vw, 4.75rem);
+
+  /* Spacing rhythm */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: clamp(3.5rem, 2rem + 6vw, 7rem);
+  --gutter: clamp(1rem, 4vw, 2rem);
+
+  --radius: 10px;
+  --radius-lg: 18px;
+  --shadow: 0 1px 2px rgb(15 23 42 / 0.06), 0 10px 28px -8px rgb(15 23 42 / 0.16);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --header-h: 72px;
+}
