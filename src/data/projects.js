@@ -51,8 +51,10 @@ export const projects = [
     slug: 'erasmus-plus',
     tag: 'erasmus',
     title: { sq: 'Erasmus +', en: 'Erasmus +' },
-    // The live site has no text for this project. Add it here when you have it.
-    description: { sq: '', en: '' },
+    description: {
+      sq: "Në datat 16-25 Qershor 2026, qyteti i Velesit në Maqedoninë e Veriut priti shkëmbimin rinor \"One Game, One Future: Pedals for Future\", një aktivitet Ndërkombëtar ku morën pjesë 5 të rinj energjikë nga Shqipëria. Ky projekt bëri bashkë të rinj nga pesë shtete të ndryshme: Shqipëria, Maqedonia e Veriut, Turqia, Rumania dhe Italia, për të promovuar sportin, mbrojtjen e mjedisit dhe stilin e jetesës së shëndetshme. Përgjatë këtyre ditëve, pjesëmarrësit zhvilluan aktivitete fizike dhe seanca pedalimi në natyrë, ndërsa shkëmbyen kulturat dhe traditat e tyre me bashkëmoshatarët. Falë mbështetjes së programit Erasmus+, ky udhëtim shërbeu si një mundësi e shkëlqyer për të rinjtë tanë që të fitonin përvoja të reja dhe të kontribuonin për një të ardhme më të gjelbër.",
+      en: "On 16-25 June 2026, the city of Veles in North Macedonia hosted the youth exchange \"One Game, One Future: Pedals for Future\", an international activity attended by 5 energetic young people from Albania. The project brought together young people from five different countries: Albania, North Macedonia, Turkey, Romania and Italy, to promote sport, environmental protection and a healthy lifestyle. Over these days, participants took part in physical activities and pedalling sessions in nature, while sharing their cultures and traditions with their peers. Thanks to the support of the Erasmus+ programme, this journey was an excellent opportunity for our young people to gain new experiences and contribute to a greener future.", // REVIEW
+    },
     cover: 'cycling-group',
     coverAlt: { sq: 'Grup të rinjsh me biçikleta në një aktivitet në natyrë', en: 'A group of young people with bicycles at an outdoor activity' }, // REVIEW (en)
     images: [],

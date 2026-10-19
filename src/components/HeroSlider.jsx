@@ -6,13 +6,13 @@ import { Img } from './Img.jsx'
 const INTERVAL = 6000
 
 // Full-width photo slideshow at the top of the home page. Photos only, no text over them.
-// Swipe on touch, arrows and dots, arrow keys, and a pause button. Autoplay stops for good
-// once a visitor uses a control, and never runs with "reduce motion".
+// Moves by itself every few seconds (pauses while the pointer or keyboard focus is on it).
+// Swipe on touch, arrows and dots, arrow keys. Does not autoplay for visitors who turned on "reduce motion".
 export function HeroSlider() {
   const { t, pick } = useLang()
   const track = useRef(null)
   const [index, setIndex] = useState(0)
-  const [playing, setPlaying] = useState(false)
+  const [playing, setPlaying] = useState(false) // true unless the visitor prefers reduced motion
   const [paused, setPaused] = useState(false) // hover or focus inside
   const count = heroSlides.length
 
@@ -23,6 +23,10 @@ export function HeroSlider() {
       const next = (i + count) % count
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       el.scrollTo({ left: next * el.clientWidth, behavior: reduce ? 'auto' : 'smooth' })
+      // Some browsers skip smooth scrolling (background tabs, power saving): make sure the slide still changes.
+      setTimeout(() => {
+        if (Math.abs(el.scrollLeft - next * el.clientWidth) > 2 && !el.matches(':active')) el.scrollTo({ left: next * el.clientWidth, behavior: 'auto' })
+      }, 1000)
     },
     [count],
   )
@@ -35,16 +39,9 @@ export function HeroSlider() {
   useEffect(() => {
     const el = track.current
     if (!el) return
-    let frame
-    const onScroll = () => {
-      cancelAnimationFrame(frame)
-      frame = requestAnimationFrame(() => setIndex(Math.round(el.scrollLeft / el.clientWidth)))
-    }
+    const onScroll = () => setIndex(Math.round(el.scrollLeft / el.clientWidth))
     el.addEventListener('scroll', onScroll, { passive: true })
-    return () => {
-      el.removeEventListener('scroll', onScroll)
-      cancelAnimationFrame(frame)
-    }
+    return () => el.removeEventListener('scroll', onScroll)
   }, [])
 
   useEffect(() => {
@@ -53,10 +50,7 @@ export function HeroSlider() {
     return () => clearInterval(id)
   }, [playing, paused, index, goTo])
 
-  const manual = (i) => {
-    setPlaying(false)
-    goTo(i)
-  }
+  const manual = (i) => goTo(i)
 
   const onKeyDown = (e) => {
     if (e.key === 'ArrowRight') {
@@ -76,10 +70,10 @@ export function HeroSlider() {
       aria-label={t('hero.label')}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
+      onFocus={(e) => e.target.matches(':focus-visible') && setPaused(true)}
       onBlur={() => setPaused(false)}
     >
-      <div className="hero-slider__track" ref={track} tabIndex={0} onKeyDown={onKeyDown} onTouchStart={() => setPlaying(false)}>
+      <div className="hero-slider__track" ref={track} tabIndex={0} onKeyDown={onKeyDown}>
         {heroSlides.map((s, i) => (
           <figure
             key={s.src}
@@ -106,17 +100,6 @@ export function HeroSlider() {
       </button>
 
       <div className="hero-slider__bar">
-        <button type="button" className="hero-slider__pause" onClick={() => setPlaying((p) => !p)} aria-label={playing ? t('hero.pause') : t('hero.play')}>
-          {playing ? (
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-              <path d="M8 5v14M16 5v14" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
-            </svg>
-          ) : (
-            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
-              <path d="M8 5l11 7-11 7z" fill="currentColor" />
-            </svg>
-          )}
-        </button>
         <div className="dots">
           {heroSlides.map((s, i) => (
             <button

@@ -27,8 +27,6 @@ export const translations = {
     'lang.switchLabel': 'Switch the site to English',
 
     'hero.label': 'Foto nga aktivitetet tona',
-    'hero.pause': 'Ndalo shfaqjen automatike',
-    'hero.play': 'Nis shfaqjen automatike',
     'search.label': 'Kërko',
     'search.placeholder': 'Kërko sipas titullit, tekstit ose projektit…',
     'search.placeholderProjects': 'Kërko projekte…',
@@ -171,8 +169,6 @@ export const translations = {
     'lang.switchLabel': 'Ndrysho faqen në shqip',
 
     'hero.label': 'Photos from our activities', // REVIEW
-    'hero.pause': 'Pause the slideshow', // REVIEW
-    'hero.play': 'Start the slideshow', // REVIEW
     'search.label': 'Search', // REVIEW
     'search.placeholder': 'Search by title, text or project…', // REVIEW
     'search.placeholderProjects': 'Search projects…', // REVIEW
