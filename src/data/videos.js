@@ -11,7 +11,7 @@
 //   { file: 'activity.mp4', title: { sq: 'Aktiviteti ynë', en: 'Our activity' }, poster: 'group-flags' },
 
 export const videos = [
-  { youtube: '', file: '', title: { sq: '', en: '' }, poster: '' },
+  { youtube: '', file: 'Video1.mp4', title: { sq: '', en: '' }, poster: '' },
   { youtube: '', file: '', title: { sq: '', en: '' }, poster: '' },
   { youtube: '', file: '', title: { sq: '', en: '' }, poster: '' },
 ]

@@ -32,7 +32,7 @@ export function VideoCard({ video, n }) {
       <video
         className="video-card__video"
         controls
-        preload="none"
+        preload={video.poster ? 'none' : 'metadata'}
         poster={video.poster ? `/img/${video.poster}-960.webp` : undefined}
         aria-label={label}
       >
