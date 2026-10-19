@@ -9,9 +9,9 @@ export const translations = {
   sq: {
     'site.name': 'Qendra KAZUS',
     'site.tagline': 'Qendra KAZUS, Korçë, Albania',
-    'meta.home': 'Qendra KAZUS | Avokim rinor në Korçë',
+    'meta.home': 'Qendra KAZUS | Advokim rinor në Korçë',
     'meta.homeDesc':
-      'Qendra KAZUS është organizatë rinore për avokim në Korçë, Shqipëri. Projekte, lajme dhe njoftime.',
+      'Qendra KAZUS është organizatë rinore për advokim në Korçë, Shqipëri. Projekte, lajme dhe njoftime.',
 
     'nav.home': 'Home',
     'nav.about': 'About',
